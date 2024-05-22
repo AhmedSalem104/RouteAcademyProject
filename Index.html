@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="img/Bookmark.png">
+    <title>Bookmark </title>
+</head>
+
+<body>
+    <div class="container p-3">
+        <div class="head-title text-center ">
+            <h1>Bookmarker</h1>
+        </div>
+        <div id="main" class="container  my-5 ">
+            <hr>
+            <div class="sup-title text-center">
+                <h2><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i>
+                </h2>
+            </div>
+            <div class="row">
+                <div class="form-group col-lg-12 col-md-12 col-sm-12 ">
+                    <label for="WebsiteName" class="fw-bolder  py-2 fs-6"><i class="fa-solid fa-book-bookmark pe-2"></i>
+                        Site Name </label>
+                    <input class="form-control" id="WebsiteName" placeholder="Bookmark Name" type="text">
+                    <div id="siteNameAlert" class="alert alert-danger mt-1 d-none">
+                        <ul class="p-0 m-0 ps-3">
+                            <li>Site name must start with uppercase</li>
+                            <li>Site name must be more 3 characters </li>
+                            <li>Site name must be less 30 characters </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group col-lg-12 col-md-12 col-sm-12 ">
+                    <label for="URLInput" class="fw-bolder  py-2 fs-6"><i class="fa-solid fa-link pe-2"></i>Site
+                        URL </label>
+                    <input class="form-control" id="URLInput" placeholder="Website URL" type="text">
+                    <div id="urlAlert" class="alert alert-danger mt-1 d-none">
+                        <ul class="p-0 m-0 ps-3">
+                            <li> Url must be Content Url Syntax</li>
+                      
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="container">
+                <div class="d-flex justify-content-center">
+                    <button onclick="AddUpdatewebsite()" id="addUpdatebtn" class="px-5 py-2  my-3">Submit </button>
+                    <button onclick="getCancle()" id="cancelbtn" class="btn btn-secondary  my-5 d-none">cancle </button>
+                </div>
+
+            </div>
+
+            <hr>
+            <table id="table" class="table table-hover ">
+                <thead class="fw-bolder text-center">
+                    <td>Index</td>
+                    <td>Website Name</td>
+                    <td>Vist</td>
+                    <td>Delete</td>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+  <a href="" target="_blank"></a>
+    <script src="js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>

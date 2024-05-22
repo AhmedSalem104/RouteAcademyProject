@@ -1,0 +1,107 @@
+body {
+    background-color: #F7ECDE;
+}
+
+
+
+#table {
+    border-radius: 10px;
+}
+
+.head-title {
+
+    font-size: 100px !important;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    isolation: isolate;
+
+
+
+}
+
+.head-title h1 {
+    position: relative;
+}
+
+.head-title h1::after {
+    content: "";
+    position: absolute;
+    top: 55%;
+    right: 41%;
+    bottom: 0;
+    left: 41%;
+    background-color: #FEC260;
+    z-index: -1;
+    transition: .4s;
+
+}
+
+.head-title h1:hover::after {
+    top: 30%;
+}
+
+hr {
+    border-top: 3px dotted black;
+
+}
+
+#addUpdatebtn {
+    background-color: #d3532f;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+
+#addUpdatebtn:hover {
+    background-color: #BB4120;
+
+
+}
+
+.sup-title {
+    font-size: 25px;
+    background: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+
+
+#visitBtn {
+    background-color: #8A9E23;
+}
+
+
+
+.circles span {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.main-div-error i {
+    color: #BB4120;
+}
+
+.circles span:nth-child(1) {
+    background-color: #f15f5d;
+}
+
+.circles span:nth-child(2) {
+    background-color: #febe2e;
+}
+
+.circles span:nth-child(3) {
+    background-color: #4db748;
+}
+
+#title-error-message {
+    text-align: left;
+    font-family: "Bree Serif", serif;
+    font-size: 21px;
+    line-height: 1.3;
+    color: #352e28;
+}
